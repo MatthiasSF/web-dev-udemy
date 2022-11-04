@@ -6,19 +6,46 @@ Reference:
 
 Cascading Style Sheets at the most basic level it indicates that the order of CSS rules matter. 
 
-
+class callas med .classname{}. bra sätt att selecta en grupp av element
 .class
+
+id can bara initieras en gång i html. används tillsammans med div(?)
+callas i css med #idname{}
 #id
+
+selectar alla elements
 *
+
+selectar ett element
 element
-element, element
-element element
+
+selectar element och element2
+element, element2
+
+selectar all element2 i element
+element element2
+
+select alla element som är parent till element
 element > element
-element + element
+
+selecta all element som är exakt efter element2
+element + element2
+
+gör en action när användare för muspekare över
 :hover
+
+selecta sista child
 :last-child
+
+selecta första child
 :first-child
+
+Overwrite allt som kommer efter
 !important (not recommended)
+
+selectar alla barn i element
+element *
+
 
 
 What seletors win out in the cascade depends on:

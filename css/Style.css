@@ -9,7 +9,13 @@ h2{
     cursor:pointer;
 }
 p{
-    
+    text-decoration: underline;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 120%;
+    font-family: 'Dancing Script', cursive;
 }
 .webtext1{
     color:white;
@@ -25,6 +31,15 @@ p{
     color:white;
     text-align: center;
     border: 5px solid rgba(66, 62, 66, 0.8);
+}
+img{
+    float: left
+}
+/*clear:both används efter en float för att ta bort så inte resterande objekt följer samma mönster*/
+footer{
+    clear:both;
+    color:white;
+    text-align: center;
 }
 li{
     list-style: none;
