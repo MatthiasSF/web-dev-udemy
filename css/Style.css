@@ -1,6 +1,21 @@
+body{
+    background-image:url(background_img.avif);
+    background-size: cover;
+}
 h2{
-    color:red;
+    color:white;
+    text-align: center;
+    border: 5px dashed rgba(39, 32, 39, 0.5);
+    cursor:pointer;
 }
 p{
-    color:pink;
+    color:white;
+}
+li{
+    list-style: none;
+    color: white;
+    display: inline-block;
+}
+:visited{
+    color:rgb(105, 103, 103);
 }
