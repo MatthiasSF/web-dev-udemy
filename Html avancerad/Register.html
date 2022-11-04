@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Register
+    </title>
+    <body>
+        <!--An HTML form is used to collect user input. 
+            The user input is most often sent to a server for processing.
+            Action används för att berätta var inputen ska sparas
+            "required" tvingar användaren att fylla i denna låda
+            input type "text" ger en textlåda.
+            input type "email" tvingar användaren att slå in en korrekt email" 
+            input type "password" är en password type. minlength specifierar hur många tecken
+            input type "date" ger ett kalender fält
+            input type "radio" ger radio buttons
+            input type "submit"ger en Submit knapp
+            input type "reset" ger en reset knapp
+            input type "checkbox" ger en checkbox
+            Select och option ger en dropdown menu
+            name inuti gender länkar samman alla radio buttons,
+            vilket i detta fallet gör att man bara kan selecta en av dem åt gången-->
+        <form action="">
+            First name:<input type="text" name="firstname"> 
+            <br>
+            Last name:<input type="text" name="lastname">
+            <br>
+            Email:<input type="email" name="email" required>
+            <br>
+            Password: <input type="password" name="password" minlength="5">
+            <br>
+            Birthday: <input type="date" name="birthday">
+            <br>
+            Gender: 
+            <br>
+            <input type="radio" name="gender"> Man 
+            <br>
+            <input type="radio" name="gender"> Kvinna
+            <br>
+            <input type="radio" name="gender"> Annat
+            <br>
+            Pets: 
+            <br>
+            <input type="checkbox" name="cat"> Cat
+            <br>
+            <input type="checkbox" name="dog"> Dog
+            <br>
+            Cars: 
+            <br>
+            <select name="" id="">
+                <option value="volvo" name="volvo">Volvo</option>
+                <option value="Saab" name="saab">Saab</option>
+            </select>
+            <br>
+            <input type="submit" value="Registrera">
+            <input type="reset">
+        </form>
+    </body>
+</html>
