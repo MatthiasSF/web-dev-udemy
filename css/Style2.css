@@ -1,3 +1,20 @@
 h2{
     color:blue;
 }
+/* .boxmodel{
+    border: 5px solid red;
+    display: inline-block;
+    padding: 5px 20px 5px 20px;
+    margin: 0px 20px 0px 20px;
+    width: 30px;
+    height: 55px;
+} */
+p{
+    font-size: 20px;
+}
+/*5 em betyder 5 ggr så stor som nuvarande pixelstorlek
+    rem betyder x ggr the root element size*/
+span{
+    /* font-size: 2em; */
+    font-size: 2rem;
+}
