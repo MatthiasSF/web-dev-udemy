@@ -8,6 +8,14 @@
     /* justify-items: start; */
     /* align-items: end; */
 }
+.green{
+    grid-column:span 2;
+    grid-row:span 2;
+    /* column */
+    /* justify-self: start; */
+    /* row */
+    align-self: end;
+}
 .zone {
     cursor:pointer;
     /* display:inline-block; */
