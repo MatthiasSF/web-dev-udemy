@@ -14,23 +14,32 @@
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
-.container{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    
-}
 /* header */
 .green{
-    grid-column-start: 1;
-    grid-column-end: end; 
+    display: flex;
+    overflow: hidden;
     padding:10px 50px;
     background-color: #4096ee;
+    position:fixed;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    list-style: none;
+    font-size: 1.5em;
+}
+li{
+    padding: 20px;
+}
+a{
+    color:#FFF;
+    text-decoration: none;
+}
+.push{
+    margin-left: auto;
 }
 /* cover */
 .red{
-    grid-column-start: 1;
-    grid-column-end: end;
     padding:100px 50px;
+    width: 100%;
 }
 #red_image{
     display: block;
@@ -41,40 +50,28 @@
 }
 /* project grid */
 .blue{
-    grid-column-start: 1;
-    grid-column-end: end;
-    padding:250px 50px; 
+    padding: 30px;
+    width: 100%;
 }
 /* footer */
 .yellow{
     grid-column-start: 1;
     grid-column-end: end; 
     padding:20px 50px;
+    width: 100%;
 }
-.header_container{
+
+.project_container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
 }
-#about{
-    grid-row: 1;
-    font-size: 1rem;
-    grid-column: 1/2;
-    
+.box{
+    background-color: #444;
+    padding:50px;
 }
-#products{
-    grid-row: 1;
-    font-size: 1rem;
-    grid-column: 2/3;
-}
-#team{
-    grid-row: 1;
-    font-size: 1rem;
-    grid-column: 3/4;
-}
-#contact{
-    grid-row: 1;
-    font-size: 1rem;
-    grid-column: end;
+.project_img{
+    width: 100%;
 }
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
