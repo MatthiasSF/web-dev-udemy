@@ -1,0 +1,79 @@
+
+// Guess what answers you would get if you ran this in the
+// Javascript Console in Google Chrome. Once you have an answer  to the questions then 
+// check them by copying them and running it in the console yourself line by line 
+
+
+//Evaluate the below:
+null
+5 + "34"
+
+null
+5 - "4"
+
+10 % 5
+
+5 % 10
+
+Javascript
+"Java" + "Script"
+
+"  "
+" " + " "
+
+null
+" " + 0
+'
+true
+true + true
+
+false
+true + false
+
+false
+false + true
+
+false
+false - true
+
+-1
+3 - 4
+
+
+"Bob" - "bill"
+
+
+//Evaluate the below comparisons:
+true
+5 >= 1
+
+false
+0 === 1
+
+false
+4 <= 1
+
+false
+1 != 1
+
+null
+"A" > "B"
+
+null
+"B" < "C"
+
+null
+"a" > "A"
+
+null
+"b" < "A"
+
+false
+true === false
+
+false
+true != true
+
+
+// Make the string: "Hi There! It's "sunny" out" by using the + sign:
+"Hi" + " There! " + "Its" +  " "sunny"" + " out+ 
