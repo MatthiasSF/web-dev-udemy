@@ -5,7 +5,7 @@ JAVASCRIPT TYPES
 3. Boolean
 4. Undefined
 5. Null
-<!-- 6. Symbol (new in ECMAScript 6) -->
+6. Symbol
 7. Object
 
 JAVASCRIPT COMPARISONS
@@ -21,16 +21,16 @@ JAVASCRIPT COMPARISONS
 JAVASCRIPT VARIABLES
 -----------------
 var
-<!-- let (new in ECMAScript 6)-->  
-<!-- const (new in ECMAScript 6)-->
+let  
+const 
 
 JAVASCRIPT CONDITIONALS
 -----------------
 if
 else
 else if
-<!-- ternary operator -->
-<!-- switch -->
+ternary operator
+switch 
 
 
 JAVASCRIPT LOGICAL OPERATORS
@@ -44,7 +44,7 @@ JAVASCRIPT FUNCTIONS
 var a = function name() {}
 function name() {}
 return
-<!-- () => (new in ECMAScript 6) -->
+() =>  
 
 JAVASCRIPT DATA STRUCTURES
 -----------------
