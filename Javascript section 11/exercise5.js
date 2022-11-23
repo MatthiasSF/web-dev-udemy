@@ -1,3 +1,6 @@
+import {without} from 'lodash';
+
+alert(without);
 function askForAge(age){
     if(Number(age) < 18){
         return("Sorry, you are too young to drive this car. Powering off");
