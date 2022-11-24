@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import CardList from "./cardlist";
-import {robots} from './robots.js';
 import SearchBox from './SearchBox';
 import './App.css';
 
@@ -17,9 +16,22 @@ class App extends Component{
     constructor(){
         super();
         this.state = {
-            robots: robots,
+            robots: [],
             searchfield: ''
         }
+    }
+    /*
+    Inbyggd react metod som blir automatiskt callad om efter render 
+    om sidan laddats.
+    Hämtar en namn lista från hemsidan med fetch och updaterar state och
+    robots[]
+    fetch() är en metod på window objekt som kommer med samtliga
+    browsers. Det är ett verktyg som används för att göra requests till servrar
+    */
+    componentDidMount(){
+        fetch('https://jsonplaceholder.typicode.com/users')
+        .then(response=>response.json())
+        .then (users => this.setState({robots: users}));
     }
     /*
     eventhanterare som tar emot varje event i searchbar och fyller på 
@@ -36,13 +48,19 @@ class App extends Component{
         const filteredRobots = this.state.robots.filter(robot =>{
             return robot.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
         })
-        return (
-            <div className = 'tc'>
-                <h1 className ='f2'>RoboFriends</h1>
-                <SearchBox searchChange = {this.onSearchChange}/>
-                <CardList robots = {filteredRobots}/>
-            </div>
-        );
+        /*Funkar inte... skulle ge en header som visar loading */
+        if(this.state.robots.lenght === 0){
+            return <h1>Loading users</h1>
+        }else{
+            return (
+                <div className = 'tc'>
+                    <h1 className ='f2'>RoboFriends</h1>
+                    <SearchBox searchChange = {this.onSearchChange}/>
+                    <CardList robots = {filteredRobots}/>
+                </div>
+            );
+        }
+        
     
     }
 }
