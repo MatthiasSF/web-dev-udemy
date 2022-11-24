@@ -1,3 +1,7 @@
+/* 
+Innehåller en array med alla robot namn, id och email.
+*/
+
 export const robots = [
   {
     id: 1,

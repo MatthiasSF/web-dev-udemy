@@ -5,7 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
 
-
+/*
+Skapar rooten av vår startsida och kör App.js genom strictmode.
+Strict mode är en sorts "kompilator" i react(?)
+*/
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
