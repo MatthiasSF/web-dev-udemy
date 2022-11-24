@@ -1,8 +1,8 @@
 import React, {Component} from "react";
-import CardList from "./cardlist";
-import SearchBox from './SearchBox';
+import CardList from "../components/cardlist";
+import SearchBox from '../components/SearchBox';
 import './App.css';
-import Scroll from './Scroll';
+import Scroll from '../components/Scroll';
 
 /*
 App.js sammanfogar alla moduler som visas i Index.js
@@ -46,11 +46,12 @@ class App extends Component{
     namn innehåller dem bokstäver som skrivits in i searchfield. 
     */
     render(){
-        const filteredRobots = this.state.robots.filter(robot =>{
-            return robot.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
+        const {robots, searchfield} = this.state;
+        const filteredRobots = robots.filter(robot =>{
+            return robot.name.toLowerCase().includes(searchfield.toLowerCase());
         })
         /*Funkar inte... skulle ge en header som visar loading */
-        if(this.state.robots.lenght === 0){
+        if(robots.lenght === 0){
             return <h1>Loading users</h1>
         }else{
             return (
