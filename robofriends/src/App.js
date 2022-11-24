@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import CardList from "./cardlist";
 import SearchBox from './SearchBox';
 import './App.css';
+import Scroll from './Scroll';
 
 /*
 App.js sammanfogar alla moduler som visas i Index.js
@@ -56,7 +57,13 @@ class App extends Component{
                 <div className = 'tc'>
                     <h1 className ='f2'>RoboFriends</h1>
                     <SearchBox searchChange = {this.onSearchChange}/>
-                    <CardList robots = {filteredRobots}/>
+                    {/*
+                    låter oss scrolla våran cardlist genom att
+                    "wrappa" den med modulen scroll
+                    */}
+                    <Scroll>
+                        <CardList robots = {filteredRobots}/>
+                    </Scroll>
                 </div>
             );
         }
