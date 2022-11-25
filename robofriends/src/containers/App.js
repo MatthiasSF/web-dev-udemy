@@ -3,6 +3,7 @@ import CardList from "../components/cardlist";
 import SearchBox from '../components/SearchBox';
 import './App.css';
 import Scroll from '../components/Scroll';
+import ErrorBoundary from '../components/ErrorBoundary';
 
 /*
 App.js sammanfogar alla moduler som visas i Index.js
@@ -61,9 +62,12 @@ class App extends Component{
                     {/*
                     låter oss scrolla våran cardlist genom att
                     "wrappa" den med modulen scroll
+                    ErrorBoundary hjälper oss att catcha errors
                     */}
                     <Scroll>
-                        <CardList robots = {filteredRobots}/>
+                        <ErrorBoundary>
+                            <CardList robots = {filteredRobots}/>
+                        </ErrorBoundary>
                     </Scroll>
                 </div>
             );
